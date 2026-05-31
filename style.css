@@ -1,0 +1,360 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+nav h2{
+    color:#60a5fa;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#e2e8f0;
+    transition:0.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    color:#60a5fa;
+    margin-bottom:40px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-content{
+    min-height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.text-content{
+    flex:1;
+}
+
+.text-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.text-content h2{
+    color:#60a5fa;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.text-content p{
+    font-size:18px;
+    max-width:700px;
+}
+
+.image-content{
+    flex:1;
+    text-align:center;
+}
+
+.image-content img{
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #60a5fa;
+    box-shadow:
+        0 0 25px rgba(96,165,250,0.4),
+        0 0 60px rgba(96,165,250,0.2);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.cv-btn{
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:10px;
+    color:white;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.cv-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(59,130,246,0.4);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+    color:#cbd5e1;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.project-container,
+.research-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card,
+.research-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,0.08);
+    transition:0.4s;
+}
+
+.project-card:hover,
+.research-card:hover{
+    transform:translateY(-8px);
+    border-color:#60a5fa;
+    box-shadow:0 10px 30px rgba(96,165,250,0.15);
+}
+
+.project-card h3,
+.research-card h3{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.project-card p,
+.research-card p{
+    color:#cbd5e1;
+}
+
+.research-card a{
+    display:inline-block;
+    margin-top:10px;
+    color:#60a5fa;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.research-card a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container{
+    max-width:850px;
+    margin:auto;
+}
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill h3{
+    margin-bottom:10px;
+}
+
+.bar{
+    width:100%;
+    height:14px;
+    background:#334155;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,#2563eb,#60a5fa);
+    border-radius:10px;
+}
+
+/* Skill Levels */
+
+.ml{
+    width:85%;
+}
+
+.cpp{
+    width:80%;
+}
+
+.html{
+    width:90%;
+}
+
+.css{
+    width:82%;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info{
+    text-align:center;
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.contact-info a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020617;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+footer p{
+    color:#94a3b8;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:10px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .text-content h1{
+        font-size:42px;
+    }
+
+    .text-content h2{
+        font-size:22px;
+    }
+
+    .image-content img{
+        width:250px;
+        height:250px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+}
